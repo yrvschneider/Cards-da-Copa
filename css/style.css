@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-block: 5px;
+}
+
+body {
+    background: #0f2b05;
+    color: #fff;
+}
+
+.cards {
+    max-width: 1280px;
+    margin-inline: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    width: 200px;
+    height: 298px;
+    background: #f4d400;
+    border-radius: 5px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.posicaoP, .nomeJogador, .numeroJogador{
+    font-size: 30px;
+    color: #544592;
+}
+
+.posicaoG {
+    font-size: 90px;
+    color: #f9e97f;
+}
+
+.escudo {
+    height: 56px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+/* POSIÇÃO DOS ELEMENTOS */
+
+.posicaoP {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 40px;
+    left: 0;
+    z-index: 1;
+    line-height: 100%;
+    display: inline-block;
+}
+
+.posicaoG {
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 100px;
+    right: 10px;
+    z-index: 0;
+    line-height: 100%;
+    display: inline-block;
+    width: 280px;
+    text-align: center;
+}
+
+.jogador {
+    z-index: 2;
+}
+
+.nomeJogador {
+    position: absolute;
+    bottom: 30px;
+}
+
+.numeroJogador {
+    position: absolute;
+    bottom: 0px;
+    right: 16px;
+}
